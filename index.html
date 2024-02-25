@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC ME MAYBE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            
+        }
+        #calculator{
+            height: 650px;
+            width: 500px;
+            background-color: rgb(43, 43, 43);
+            border-radius: 15px;
+            padding: 20px;
+        }
+        #calculator-display {
+            /* width: 95%; */
+            height: 20%;
+            background-color: rgb(111, 205, 119);
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        #calculator-buttons {
+            display: flex;
+            margin-top: 20px;
+            height: 75%;
+           
+        }
+        #left {
+            flex:3;
+        }
+        #right {
+            flex:1;
+            display: flex;
+        }
+        .operator{
+            flex:1;
+            background-color: rgb(255, 150, 58);
+            border-radius: 5px;
+            flex: 1;
+            margin-top: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #operation-buttons{
+            display: flex;
+            flex-direction: column;
+            
+            width: 100%;
+
+        }
+        #left {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #function-buttons{
+            display: flex;
+
+            flex:1;
+        }
+        #number-buttons {
+            flex: 4;
+        }
+        .function {
+            flex: 1;
+            background-color: rgb(48, 159, 179);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3px;
+            margin-right: 3px;
+        }
+        #number-buttons {
+
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .number {
+            background-color: antiquewhite;
+            flex: 1;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3px;
+        }
+        .line {
+            display: flex;
+            margin-top: 3px;
+            flex:1;
+        }
+        .zero {
+            background-color: antiquewhite;
+            flex: 1;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3px;
+        }
+        .hover-button:hover{
+            filter:brightness(50%);
+        }
+        
+    </style>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="calculator-display"></div>
+            <div id="calculator-buttons">
+                <div id="left">
+                    <div id="function-buttons"></div>
+                    <div id="number-buttons">
+                        <div class="line 0"></div>
+                        <div class="line 1"></div>
+                        <div class="line 2"></div>
+                        <div class="line 3" style="display: flex;">
+                            <div class="zero button" style="flex: 2">
+                                <h1>0</h1>
+                            </div>
+                            <div class="decimal button number" style="flex:1;">
+                                <h1>.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div id="operation-buttons">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
