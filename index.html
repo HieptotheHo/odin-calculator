@@ -35,6 +35,10 @@
             background-color: rgb(111, 205, 119);
             border-radius: 10px;
             margin: 0 auto;
+
+            display: flex;
+            justify-content: right;
+            align-items: center;
         }
         #calculator-buttons {
             flex:4;
@@ -123,14 +127,19 @@
         .hover-button:hover{
             filter:brightness(50%);
         }
-        
+        #calculator-display h1 {
+            font-size: 4rem;
+            padding: 10px;
+        }
     </style>
     <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <div id="container">
         <div id="calculator">
-            <div id="calculator-display"></div>
+            <div id="calculator-display">
+                <h1 class ="calculator text">0</h1>
+            </div>
             <div id="calculator-buttons">
                 <div id="left">
                     <div id="function-buttons"></div>
@@ -139,7 +148,7 @@
                         <div class="line 1"></div>
                         <div class="line 2"></div>
                         <div class="line 3" style="display: flex;">
-                            <div class="zero button" style="flex: 2">
+                            <div class="zero button number" style="flex: 2">
                                 <h1>0</h1>
                             </div>
                             <div class="decimal button number" style="flex:1;">
