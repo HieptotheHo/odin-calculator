@@ -1,2 +1,2 @@
 # odin-calculator
-![]('demo.png')
+![Hiep's Calculator](demo.png)
